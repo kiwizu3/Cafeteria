@@ -1,5 +1,17 @@
 import React from "react";
+import Navbar from "../components/Navbar";
+import { Items } from "./Items.js";
+import Hero from "../components/Hero";
 
 export default function Menu() {
-	return <div>Hello from Menu page</div>;
+	return (
+		<>
+			<Navbar />
+			<Hero>
+				<a href="Items">
+					<button>Items</button>
+				</a>
+			</Hero>
+		</>
+	);
 }

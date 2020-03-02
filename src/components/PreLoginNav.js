@@ -27,20 +27,20 @@ export default class Navbar extends Component {
 						>
 							<FaCookieBite className="nav-icon" />
 						</button>
+						<ul
+							className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
+						>
+							<li onClick={this.handleToggle}>
+								<Link to="">Menu</Link>
+							</li>
+							<li onClick={this.handleToggle}>
+								<Link to="">About</Link>
+							</li>
+							<li onClick={this.handleToggle}>
+								<Link to="">Contact</Link>
+							</li>
+						</ul>
 					</div>
-					<ul
-						className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
-					>
-						<li onClick={this.handleToggle}>
-							<Link to="/">Home</Link>
-						</li>
-						<li onClick={this.handleToggle}>
-							<Link to="/menu">Menu</Link>
-						</li>
-						<li onClick={this.handleToggle}>
-							<Link to="/login">Login</Link>
-						</li>
-					</ul>
 				</div>
 			</nav>
 		);

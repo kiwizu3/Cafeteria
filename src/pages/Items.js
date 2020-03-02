@@ -1,7 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
 
-export default class Items extends Component {
-	render() {
-		return <div>Hello From Menu Items</div>;
-	}
+export default function Items() {
+	return (
+		<>
+			<Navbar />
+			<Hero hero="itemsHero">
+				<a href="Checkout">
+					<button>Checkout</button>
+				</a>
+			</Hero>
+		</>
+	);
 }

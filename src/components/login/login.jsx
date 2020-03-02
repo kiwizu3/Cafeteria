@@ -1,6 +1,7 @@
 import React from "react";
 import loginImg from "./images/login.svg";
 import "./style.scss";
+import { Menu } from "../../pages/Menu.js";
 
 export class LoginPage extends React.Component {
 	constructor(props) {
@@ -27,9 +28,11 @@ export class LoginPage extends React.Component {
 					</div>
 				</div>
 				<div className="footer">
-					<button type="button" className="lgn-btn">
-						Login
-					</button>
+					<a href="Menu">
+						<button type="button" className="lgn-btn">
+							Login
+						</button>
+					</a>
 				</div>
 			</div>
 		);
