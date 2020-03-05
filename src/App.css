@@ -63,7 +63,7 @@ h3 {
 	left: 0;
 	width: 100%;
 	padding: 0.35rem 2rem;
-	background: var(--offWhite);
+	background: var(--mainWhite);
 	z-index: 1;
 }
 .nav-header {
@@ -80,6 +80,7 @@ h3 {
 	font-size: 1.5rem;
 	color: var(--primaryColor);
 }
+
 .nav-links {
 	height: 0;
 	overflow: hidden;
@@ -116,7 +117,7 @@ h3 {
 	.nav-links {
 		height: auto;
 		display: flex;
-		margin-left: 50rem;
+		margin-left: 30rem;
 	}
 	.nav-links a {
 		margin: 0 1rem;
@@ -145,5 +146,11 @@ h3 {
 /* End of Hero */
 
 /* Landing Page */
-
+.bbb-logo {
+	position: relative;
+	height: 200px;
+	width: 100%;
+	background-color: white;
+	border-radius: 50%;
+}
 /* End of Landing Page */

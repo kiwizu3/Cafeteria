@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Logo from "../images/foodLogo.png";
+
 import { FaCookieBite } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -27,20 +28,20 @@ export default class Navbar extends Component {
 						>
 							<FaCookieBite className="nav-icon" />
 						</button>
-						<ul
-							className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
-						>
-							<li onClick={this.handleToggle}>
-								<Link to="">Menu</Link>
-							</li>
-							<li onClick={this.handleToggle}>
-								<Link to="">About</Link>
-							</li>
-							<li onClick={this.handleToggle}>
-								<Link to="">Contact</Link>
-							</li>
-						</ul>
 					</div>
+					<ul
+						className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
+					>
+						<li onClick={this.handleToggle}>
+							<Link to="">About</Link>
+						</li>
+						<li onClick={this.handleToggle}>
+							<Link to="">Menu</Link>
+						</li>
+						<li onClick={this.handleToggle}>
+							<Link to="">Contact</Link>
+						</li>
+					</ul>
 				</div>
 			</nav>
 		);

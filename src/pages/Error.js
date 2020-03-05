@@ -7,7 +7,7 @@ export default function Error() {
 		<>
 			<Navbar />
 			<Hero>
-				<div>Hello from Error page.</div>
+				<div style={{ color: "white" }}>Hello from Error page.</div>
 			</Hero>
 		</>
 	);
