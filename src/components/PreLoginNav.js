@@ -41,6 +41,9 @@ export default class Navbar extends Component {
 						<li onClick={this.handleToggle}>
 							<Link to="">Contact</Link>
 						</li>
+						<li onClick={this.handleToggle}>
+							<Link to="/login">Login</Link>
+						</li>
 					</ul>
 				</div>
 			</nav>
