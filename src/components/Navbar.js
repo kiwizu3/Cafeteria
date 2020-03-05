@@ -40,6 +40,9 @@ export default class Navbar extends Component {
 						<li onClick={this.handleToggle}>
 							<Link to="/login">Login</Link>
 						</li>
+						<li onClick={this.handleToggle}>
+							<Link to="/menu/:items">Items</Link>
+						</li>
 					</ul>
 				</div>
 			</nav>
