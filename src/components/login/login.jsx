@@ -1,5 +1,5 @@
 import React from "react";
-import loginImg from "./images/login.svg";
+import loginImg from "../../images/BBBlogo.jpg";
 import "./style.scss";
 import { Menu } from "../../pages/Menu.js";
 

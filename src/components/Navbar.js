@@ -19,6 +19,7 @@ export default class Navbar extends Component {
 					<div className="nav-header">
 						<Link to="/">
 							<img src={Logo} alt="Bites for Bytes " />
+							<h2 className="nav-h2">Bites for Bytes</h2>
 						</Link>
 						<button
 							type="button"
