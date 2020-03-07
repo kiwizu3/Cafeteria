@@ -8,7 +8,7 @@ export default function Checkout() {
 			<Navbar />
 			<Hero>
 				<a>
-					<button>Future Order</button>
+					<button>Checkout Order</button>
 				</a>
 			</Hero>
 		</>
