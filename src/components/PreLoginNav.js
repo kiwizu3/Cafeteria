@@ -19,7 +19,8 @@ export default class Navbar extends Component {
 				<div className="nav-center">
 					<div className="nav-header">
 						<Link to="/">
-							<img src={Logo} alt="Bites for Bytes " />
+							<img src={Logo} alt="Bites for Bytes" />
+							<h2>Bites for Bytes</h2>
 						</Link>
 						<button
 							type="button"
@@ -33,10 +34,7 @@ export default class Navbar extends Component {
 						className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
 					>
 						<li onClick={this.handleToggle}>
-							<Link to="">About</Link>
-						</li>
-						<li onClick={this.handleToggle}>
-							<Link to="">Menu</Link>
+							<Link to="/premenu">Menu</Link>
 						</li>
 						<li onClick={this.handleToggle}>
 							<Link to="">Contact</Link>

@@ -15,27 +15,34 @@ export default function Land() {
 					<img className="bbb-logo" src={BBBLogo} alt="Bites for Bytes " />
 					<h1 className="landingH1">clever words or something...........</h1>
 				</Hero>
-				<Hero hero="landHeroW">
-					<Banner title="About Us" />
+				<Hero hero="landHeroBlnk">
+					<Banner
+						title="About Us"
+						subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+					></Banner>
 				</Hero>
 				<div className="flex-container">
 					<div className="menu">
 						<Hero hero="landHeroReg">
-							<Banner title="Menu" />
+							<Banner title="Menu">
+								<Link to="/premenu" className="btn-primary">
+									Lets Go
+								</Link>
+							</Banner>
 						</Hero>
 					</div>
 					<div className="contact">
 						<Hero className="contact">
-							<Banner title="Contact" />
+							<Banner title="Login">
+								<Link to="/login" className="btn-primary">
+									Login
+								</Link>
+							</Banner>
 						</Hero>
 					</div>
 				</div>
-				<Hero hero="landHeroW">
-					<Banner title="Login">
-						<Link to="/login" className="btn-primary">
-							Login
-						</Link>
-					</Banner>
+				<Hero hero="landHeroBlnk">
+					<Banner title="Contact" />
 				</Hero>
 			</body>
 		</>

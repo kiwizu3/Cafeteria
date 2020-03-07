@@ -175,9 +175,9 @@ h3 {
 	align-items: center;
 	justify-content: center;
 }
-.landHeroW {
-	min-height: 70vh;
-	background-color: var(--offWhite);
+.landHeroBlnk {
+	min-height: calc(100vh - 150px);
+	background: url("./images/landAboutBck.jpg") center/cover no-repeat;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -227,7 +227,7 @@ h3 {
 .landingH1 {
 	position: absolute;
 	top: 75%;
-	color: black;
+	color: white;
 	font-size: 3rem;
 }
 .flex-container {
