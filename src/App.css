@@ -30,12 +30,6 @@ h2 {
 	font-size: 2em;
 	margin-bottom: 0.75em;
 }
-.nav-h2 {
-	position: absolute;
-	top: 15%;
-	display: inline-block;
-	margin-bottom: 0;
-}
 
 h3 {
 	font-size: 1.5em;
@@ -78,8 +72,8 @@ h3 {
 .lgn-btn:focus {
 	outline: none;
 }
-
 /* end of globals */
+
 /* Navbar */
 .navbar {
 	position: fixed;
@@ -94,6 +88,13 @@ h3 {
 	display: flex;
 	justify-content: space-between;
 }
+.nav-header h2 {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 0;
+	bottom: 25%;
+	color: var(--primaryColor);
+}
 .nav-btn {
 	background: transparent;
 	border: none;
@@ -104,8 +105,13 @@ h3 {
 	font-size: 1.5rem;
 	color: var(--primaryColor);
 }
-
 .nav-links {
+	height: 0;
+	overflow: hidden;
+	transition: var(--mainTransition);
+	list-style-type: none;
+}
+.pre-nav-links {
 	height: 0;
 	overflow: hidden;
 	transition: var(--mainTransition);
@@ -122,14 +128,34 @@ h3 {
 	font-weight: 600;
 	letter-spacing: var(--mainSpacing);
 }
+.pre-nav-links a {
+	display: block;
+	text-decoration: none;
+	padding: 1rem 0;
+	color: var(--mainBlack);
+	transition: var(--mainTransition);
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: var(--mainSpacing);
+}
 .nav-links a:hover {
 	color: var(--primaryColor);
 }
-
+.pre-nav-links a:hover {
+	color: var(--primaryColor);
+}
 .show-nav {
-	height: 200px;
+	height: 10rem;
+}
+.pre-show-nav {
+	height: 6rem;
 }
 @media screen and (min-width: 768px) {
+	.nav-header h2 {
+		position: absolute;
+		margin-bottom: 0;
+	}
 	.nav-btn {
 		display: none;
 	}
@@ -138,12 +164,21 @@ h3 {
 		margin: 0 auto;
 		display: flex;
 	}
+	.pre-nav-links {
+		height: auto;
+		display: flex;
+		margin-left: 55rem;
+	}
 	.nav-links {
 		height: auto;
 		display: flex;
-		margin-left: 30rem;
+		margin-left: 50rem;
 	}
 	.nav-links a {
+		margin: 0 1rem;
+		padding: 0.5rem 0;
+	}
+	.pre-nav-links a {
 		margin: 0 1rem;
 		padding: 0.5rem 0;
 	}
@@ -159,7 +194,6 @@ h3 {
 	align-items: center;
 	justify-content: center;
 }
-
 .itemsHero {
 	min-height: 70vh;
 	background: url("./images/itemBackground.jpg") center/cover no-repeat;
@@ -167,7 +201,6 @@ h3 {
 	align-items: center;
 	justify-content: center;
 }
-
 .landHeroBk {
 	min-height: 100vh;
 	background: url("./images/defaultBackground.jpg") center/cover no-repeat;
@@ -254,5 +287,22 @@ h3 {
 .contact:hover {
 	opacity: 0.8;
 }
-
 /* End of Landing Page */
+/* Title */
+.contact-title {
+	text-align: center;
+	margin-bottom: 4rem;
+}
+.contact-title h4 {
+	font-size: 2rem;
+	letter-spacing: var(--mainSpacing);
+	text-transform: capitalize;
+	margin-bottom: 1rem;
+}
+.contact-title div {
+	width: 5rem;
+	height: 5px;
+	margin: 0 auto;
+	background: var(--primaryColor);
+}
+/* End of Title */

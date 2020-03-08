@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Banner from "../components/Banner";
 import Hero from "../components/Hero";
 import Navbar from "../components/PreLoginNav";
+import Contact from "../components/Contact";
+
 export default function Land() {
 	return (
 		<>
@@ -44,6 +46,7 @@ export default function Land() {
 				<Hero hero="landHeroBlnk">
 					<Banner title="Contact" />
 				</Hero>
+				{/* <Contact /> */}
 			</body>
 		</>
 	);

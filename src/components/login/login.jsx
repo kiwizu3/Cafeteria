@@ -11,7 +11,6 @@ export class LoginPage extends React.Component {
 	render() {
 		return (
 			<div className="base-container">
-				<div className="header">Login</div>
 				<div className="content">
 					<div className="image">
 						<img src={loginImg} alt="Login Image" />

@@ -31,13 +31,12 @@ export default class Navbar extends Component {
 						</button>
 					</div>
 					<ul
-						className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
+						className={
+							this.state.isOpen ? "pre-nav-links pre-show-nav" : "pre-nav-links"
+						}
 					>
 						<li onClick={this.handleToggle}>
 							<Link to="/premenu">Menu</Link>
-						</li>
-						<li onClick={this.handleToggle}>
-							<Link to="">Contact</Link>
 						</li>
 						<li onClick={this.handleToggle}>
 							<Link to="/login">Login</Link>
