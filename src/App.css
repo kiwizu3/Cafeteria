@@ -281,10 +281,10 @@ h3 {
 .menu:hover {
 	opacity: 0.8;
 }
-.contact {
+.login {
 	flex-grow: 1;
 }
-.contact:hover {
+.login:hover {
 	opacity: 0.8;
 }
 /* End of Landing Page */
@@ -298,6 +298,7 @@ h3 {
 	letter-spacing: var(--mainSpacing);
 	text-transform: capitalize;
 	margin-bottom: 1rem;
+	color: white;
 }
 .contact-title div {
 	width: 5rem;
@@ -306,3 +307,33 @@ h3 {
 	background: var(--primaryColor);
 }
 /* End of Title */
+/* Contact */
+.contacts {
+	background: url("./images/landContactBck.jpg") center/cover no-repeat;
+	text-align: center;
+	padding: 3rem;
+}
+
+.contact-center {
+	width: 90vw;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+	grid-row-gap: 2rem;
+	grid-column-gap: 50px;
+}
+
+.contact span {
+	display: inline-block;
+	color: var(--primaryColor);
+	font-size: 2.5rem;
+	color: white;
+	margin-bottom: 1.5rem;
+}
+
+.contacts h6 {
+	letter-spacing: var(--mainSpacing);
+	color: white;
+	text-transform: uppercase;
+}
+/* End of Contact */
