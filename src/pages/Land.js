@@ -15,7 +15,7 @@ export default function Land() {
 			<body>
 				<Hero hero="landHeroBk">
 					<img className="bbb-logo" src={BBBLogo} alt="Bites for Bytes " />
-					<h1 className="landingH1">clever words or something...........</h1>
+					<h1 className="landingH1">Lorum Ipsum...</h1>
 				</Hero>
 				<Hero hero="landHeroBlnk">
 					<Banner
@@ -33,8 +33,8 @@ export default function Land() {
 							</Banner>
 						</Hero>
 					</div>
-					<div className="contact">
-						<Hero className="contact">
+					<div className="login">
+						<Hero>
 							<Banner title="Login">
 								<Link to="/login" className="btn-primary">
 									Login
@@ -43,10 +43,7 @@ export default function Land() {
 						</Hero>
 					</div>
 				</div>
-				<Hero hero="landHeroBlnk">
-					<Banner title="Contact" />
-				</Hero>
-				{/* <Contact /> */}
+				<Contact />
 			</body>
 		</>
 	);
