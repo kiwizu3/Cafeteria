@@ -1,0 +1,41 @@
+.titleBar{
+    background:red;
+    top:6.1%;
+}
+.w-100{
+    width:100%;
+}
+.center-text{
+    text-align:center;
+}
+
+.block{
+    position: absolute;
+    display:block;
+    
+}
+
+.white {
+    background: white;
+    width: 60%;
+    length: 80%;
+    top:15%;
+    font-size: 2em;
+}
+.bold{
+    font-weight: bold;
+}
+
+.priceSpacing{
+    margin-right:40%;
+    margin-left:5%;
+}
+.subSpace{
+    margin-right:60%;
+}
+.taxSpace{
+    margin-right:68.5%;
+}
+.totalSpace{
+    margin-right:65.5%;
+}
