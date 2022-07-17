@@ -1,6 +1,6 @@
 import React from "react";
 import loginImg from "../../images/BBBlogo.jpg";
-import "./style.scss";
+import "./login.css";
 import { Menu } from "../../pages/Menu.js";
 
 export class LoginPage extends React.Component {

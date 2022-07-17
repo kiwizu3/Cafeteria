@@ -1,3 +1,3 @@
-import "./style.scss";
+import "./login.css";
 
 export { Login } from "./login";
